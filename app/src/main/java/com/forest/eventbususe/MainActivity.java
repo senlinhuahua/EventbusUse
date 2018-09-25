@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void aiJava(Forest forest){
-
         Log.e(TGA,"thread2 = "+Thread.currentThread().getName());
         tv_text.setText(forest.getMoney()+"two");
         Log.e(TGA,"forest2 = "+forest.getName());
